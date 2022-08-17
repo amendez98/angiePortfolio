@@ -1,0 +1,58 @@
+html {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+body {
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.landingPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    height: 100%;
+    width: 100%;
+    margin-left: 12%;
+}
+
+.name{
+    margin-bottom: 0px;
+}
+
+.profession {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.imgTitle {
+    width: 750px;
+    height: 750px;
+    background: url("../images/pic.png");
+    border-radius: 50%;
+}
+
+.nav {
+    margin-top: 30px;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0;
+    margin: 5px;
+    margin-left: 0px;
+}
