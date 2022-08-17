@@ -6,7 +6,7 @@
     <title>Angelina's Portfolio</title>
   </head>
   <body>
-    <div class="landingPage">
+    <section class="landingPage">
       <div class="title">
         <h1 class="name">Angelina Demianova</h1>
         <p class="profession">Digital Marketing Specialist</p>
@@ -17,9 +17,23 @@
         </li>
       </div>
       <div class="imgTitle"></div>
-    </div>
-    <div class="aboutPage"></div>
-    <div class="expPage"></div>
-    <div class="contactPage"></div>
+    </section>
+    <section class="aboutPage"></section>
+    <section class="expPage"></section>
+    <section class="contactPage">
+      <h2 style="margin: 0;">Get in Touch</h2>
+      <form action="/index.php" class="contactMe">
+        <label>
+          <input type="text" name="name" placeholder="Name" />
+        </label>
+        <label>
+          <input type="text" name="email" placeholder="Email"/>
+        </label>
+        <label>
+          <input type="text" name="content" placeholder="Content" />
+        </label>
+      </form>
+      <button class="submit">Submit</button>
+    </section>
   </body>
 </html>
