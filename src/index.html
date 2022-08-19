@@ -2,38 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/3d03624524.js" crossorigin="anonymous"></script>
     <title>Angelina's Portfolio</title>
   </head>
   <body>
+
     <section class="landingPage">
+      <div id="one" class="art"></div>
+      <div id="five" class="art"></div>
       <div class="title">
         <h1 class="name">Angelina Demianova</h1>
         <p class="profession">Digital Marketing Specialist</p>
         <li class="nav">
-          <ul>About me</ul>
-          <ul>Work Experience</ul>
-          <ul>Contact me</ul>
+          <ul>
+            <a href="#1">About me</a>
+          </ul>
+          <ul>
+            <a href="#2">Work Experience</a>
+          </ul>
+          <ul>
+            <a href="#3">Contact me</a>
+          </ul>
         </li>
       </div>
       <div class="imgTitle"></div>
     </section>
-    <section class="aboutPage"></section>
-    <section class="expPage"></section>
-    <section class="contactPage">
-      <h2 style="margin: 0;">Get in Touch</h2>
+
+    <section id="1" class="aboutPage">
+      <div id="two" class="art"></div>
+      <div class="aboutTitle">About Me</div>
+    </section>
+
+    <section id="2" class="expPage">
+      <div id="three" class="art"></div>
+      <div class="expTitle">Work Experience</div>
+    </section>
+
+    <section id="3" class="contactPage">
+      <div id="four" class="art"></div>
+      <div class="contactTitle">Get in Touch</div>
       <form action="/index.php" class="contactMe">
         <label>
-          <input type="text" name="name" placeholder="Name" />
+          <h2>Name</h2>
+          <input type="text" name="name"/>
         </label>
         <label>
-          <input type="text" name="email" placeholder="Email"/>
+          <h2>Email</h2>
+          <input type="text" name="email"/>
         </label>
         <label>
-          <input type="text" name="content" placeholder="Content" />
+          <h2>Phone #</h2>
+          <input type="text" name="pNumber"/>
         </label>
+        <label>
+          <h2>Message</h2>
+          <input type="text" name="content" id="content"/>
+        </label>
+        <br>
+        <button class="submit">Submit</button>
       </form>
-      <button class="submit">Submit</button>
     </section>
+
+    <footer class="icons">
+      <li class="socialMedia">
+        <ul>
+          <a target="_blank" rel="noopener noreferrer" href="angelinademianova@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </ul>
+        <ul>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/angelina-demianova/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </ul>
+        <ul>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/angelinademianova">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </ul>
+        <ul>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/angddemi/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </ul>
+      </li>
+    </footer>
+
   </body>
 </html>

@@ -12,12 +12,76 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
+    min-width: 100vw;
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
+/* --------------------------------------ART OBJECT--------------------------------------- */
+
+.art {
+    position: absolute;
+    background-color: #BDBDFF;
+    z-index: -1;
+}
+
+#one {
+    right: -5%;
+    bottom: -20%;
+
+    height: 30%;
+    width: 16%;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+#two {
+    left: -5%;
+    bottom: -15%;
+
+    height: 70%;
+    width: 38%;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+#three {
+    right: 0;
+    bottom: -15%;
+
+    height: 50%;
+    width: 27%;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+#four {
+    left: 5%;
+    bottom: 15%;
+
+    height: 50%;
+    width: 27%;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+#five {
+    left: -2%;
+    top: 5%;
+
+    height: 40%;
+    width: 22%;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+
+/* -------------------------------------LANDING PAGE-------------------------------------- */
+
 
 .landingPage {
     display: flex;
@@ -39,10 +103,11 @@ html, body {
 }
 
 .imgTitle {
-    width: 750px;
-    height: 750px;
+    width: 40%;
+    height: 75%;
     background: url("../images/pic.png");
-    border-radius: 50%;
+    shape-outside: circle();
+    clip-path: circle();
 }
 
 .nav {
@@ -51,20 +116,70 @@ html, body {
     text-decoration: underline;
 }
 
-ul {
+.nav > ul {
     padding: 0;
     margin: 5px;
     margin-left: 0px;
 }
 
-.aboutPage {
-    height: 100vh;
-    background-color: aqua;
+.nav > ul > a {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    text-decoration: none!important;
+    color: black;
 }
 
-.expPage {
+
+/* -------------------------------------ABOUT PAGE-------------------------------------- */
+
+
+.aboutPage {
+    position: relative;
     height: 100vh;
-    background-color: gold;
+}
+
+.aboutTitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    font-size: 500%;
+    color: white;
+
+    top: 10%;
+    height: 15%;
+    width: 40%;
+    background-color: #641272;
+    border-radius: 0px 3px 3px 0px;
+}
+
+
+/* -------------------------------------EXPERIENCE PAGE-------------------------------------- */
+
+
+.expPage {
+    position: relative;
+    height: 100vh;
+}
+
+.expTitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    font-size: 500%;
+    color: white;
+
+    top: 10%;
+    right: 0;
+    height: 15%;
+    width: 40%;
+    background-color: #641272;
+    border-radius: 3px 0px 0px 3px;
 }
 
 
@@ -72,26 +187,102 @@ ul {
 
 
 .contactPage {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: grey;
 }
 
-label {
+.contactTitle {
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    text-align: right;
-    width: 400px;
-    line-height: 26px;
-    margin-bottom: 10px;
-  }
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    font-size: 500%;
+    color: white;
+
+    top: 10%;
+    right: 30%;
+    left: 30%;
+    height: 15%;
+    width: 40%;
+    background-color: #641272;
+    border-radius: 3px 3px 3px 3px;
+}
+
+form {
+    width: 40%;
+    height: 45%;
+}
+
+h2 {
+    margin: 0;
+    margin-left: 1%;
+    margin-top: 1%;
+}
   
-  input {
-    height: 20px;
-    flex: 0 0 200px;
-    margin-left: 10px;
-  }
+input {
+    width: 50%;
+    height: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#content {
+    height: 25%;
+    width: 75%;
+}
+
+.submit {
+    margin-left: 1%;
+    margin-top: 1%;
+
+    background-color: #641272;
+    border-radius: 5%;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 16px;
+    text-align: center;
+}
+
+.submit:hover, .submit:focus {
+  background-color: #BDBDFF;
+}
+
+
+/* --------------------------------------FOOTER--------------------------- */
+
+
+.icons {
+    height: 9%;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.socialMedia > ul > a {
+    color: #641272;
+}
+
+i {
+    size: 2in;
+}
+
+
+/* --------------------------------------ALL PAGES--------------------------- */
+
+
+.landingPage, .aboutPage, .contactPage, .expPage {
+    /* border: 1px solid black; */
+}
