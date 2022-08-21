@@ -158,6 +158,26 @@ html, body {
     border-radius: 0px 3px 3px 0px;
 }
 
+.aboutInfo {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+
+    border: 1px solid black;
+    height: 50%;
+    width: 30%;
+}
+
+.pics {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+
+    border: 1px solid black;
+    height: 50%;
+    width: 30%;
+}
+
 
 /* -------------------------------------EXPERIENCE PAGE-------------------------------------- */
 
